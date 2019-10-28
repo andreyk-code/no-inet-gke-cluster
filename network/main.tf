@@ -1,4 +1,5 @@
 module "gke-no-internet-network" {
+  version = "~> 0.8.0"
   source = "terraform-google-modules/network/google"
 
   project_id                             = "${var.project_id}"

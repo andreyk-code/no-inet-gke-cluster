@@ -15,7 +15,8 @@ provider "google-beta" {
 }
 
 module "private_gke_cluster" {
-  source                  = "github.com/terraform-google-modules/terraform-google-kubernetes-engine//modules/private-cluster"
+  source                  = "terraform-google-modules/kubernetes-engine/google//modules/private-cluster"
+  version		  = "~> 3.0.0"
   project_id              = "${var.project_id}"
   name                    = "${var.gke_cluster}"
   regional                = false
