@@ -44,3 +44,5 @@ priv-cluster
 The terraform files for the VPC and the GKE cluster are using the following [Google maintained modules](https://github.com/terraform-google-modules). 
 
 
+## Terraform version
+Tested with Terraform v0.11.*. Incompatible with Terraform 0.12.
